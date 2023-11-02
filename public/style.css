@@ -1,0 +1,114 @@
+:root {
+    --background-segment: rgb(0,0,0, 0.4);
+    --background-segment-actif: rgba(31, 136, 45, 0.815);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Fond */
+main {
+    margin: 1rem;
+    height: 22rem;
+    width: 15rem;
+    background-color: rgb(46, 46, 46);
+    position: relative;
+}
+
+div.ensemble {
+    padding: 2rem;
+}
+/* Dessin des segments */
+div.trait{
+    height: 1rem;
+    width: 7rem;
+    background-color: var(--background-segment);
+}
+
+div.triangle1, div.triangle2 {
+    border-top : 0.5rem solid transparent;
+    border-bottom : 0.5rem solid transparent;
+}
+
+div.triangle1 {
+    border-right : 0.5rem solid var(--background-segment);
+}
+
+div.triangle2 {
+    border-left : 0.5rem solid var(--background-segment);
+}
+
+/* Dessin des segments quand actif */
+div.trait.segment_actif{
+    background-color: var(--background-segment-actif);
+}
+
+div.triangle1.segment_actif {
+    border-right : 0.5rem solid var(--background-segment-actif);
+}
+
+div.triangle2.segment_actif {
+    border-left : 0.5rem solid var(--background-segment-actif);
+}
+
+/* Caractéristiques des segments pour faire un segment */
+div.segment {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+/* Rotation des segments verticaux */
+div.segment_vertical {
+    transform: rotate(90deg);
+}
+
+/* Posistionnement de chaque segment */
+div.segment1 {
+    position: absolute;
+    top: 2.5rem;
+    left: 3.5rem;
+}
+
+div.segment2{
+    position: absolute;
+    top: 6.55rem;
+    left: 7.55rem;
+}
+
+div.segment3 {
+    position: absolute;
+    top: 14.65rem;
+    left: 7.55rem;
+}
+
+div.segment4 {
+    position: absolute;
+    top: 18.7rem;
+    left: 3.5rem;
+
+}
+
+div.segment5 {
+    position: absolute;
+    top: 14.65rem ;
+    left: -0.55rem;
+
+}
+
+div.segment6 {
+    position: absolute;
+    top: 6.55rem;
+    left: -0.55rem;
+}
+
+div.segment7 {
+    position: absolute;
+    top: 10.6rem;
+    left: 3.5rem;
+
+}
+
+
